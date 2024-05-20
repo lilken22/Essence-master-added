@@ -35,7 +35,7 @@ app.use("/", auth)
 app.use("/", payment)
 
 
-const port = process.env.PORT
+const port = process.env.PORT ||5100;
 app.listen(port, ()=>{
-    console.log("listening on port "+ port);
+    console.log(`listening on port + ${port}`);
 })
